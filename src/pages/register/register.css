@@ -1,0 +1,93 @@
+.register{
+    height: calc(100vh - 60px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-image: url(https://wallpapercave.com/wp/wp4590344.jpg) ;
+    background-size: cover; */
+    background-color: #F6F6F6;
+}
+.loginName{
+    font-size: 40px;
+    font-family: 'Lora', sans-serif;
+    align-self: center;
+    margin-bottom: 20px;
+    color: rgb(54, 45, 45);
+}
+
+.loginForm{
+    /* padding: 30px; */
+    margin: 20px;
+    margin-bottom: 10px;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    /* border: 1px solid #EEEEEE; */
+    /* background-color: #b8abf3; */
+    
+}
+
+.loginForm > label{
+    font-family: 'Lora', sans-serif;
+    margin: 10px 0;
+    font-size: 1rem;
+    margin-left: 10px;
+    color: rgb(54, 45, 45);
+}
+
+#email, #password, #username {
+    font-family: 'Lora', sans-serif;
+    width: 250px;
+    padding: 10px;
+    border: none;
+    background-color: rgb(226, 226, 226);
+    border-radius: 25px;
+}
+
+.registerButton{
+    margin-top: 20px;
+    padding: 8px;
+    background-color: #07689F;
+    border: 2px solid #07689F;
+    border-radius: 25px;
+    width: 270px;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+h3{
+    font-family: 'Lora', sans-serif;
+    font-size: 0.8rem;
+    margin-bottom: 10px;
+    margin-top: 0;
+    color: rgb(82, 76, 76);
+}
+
+.logiButton{
+    padding: 8px;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 25px;
+    width: 270px;
+    color: black;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.linkLogi{
+    text-decoration: none;
+    color: inherit;
+    height: 38px;
+    border-radius: 25px;
+    margin-bottom: 80px;
+}
+
+.err{
+    color: red;
+    position: relative;
+    bottom: 50px;
+}
