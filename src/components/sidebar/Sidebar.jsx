@@ -9,8 +9,12 @@ export default function Sidebar() {
     async function getCats() {
        try {
          const response = await axios.get("http://localhost:5000/api/category");
-         const arr = new Set(response.data);
-         console.log(arr);
+         const newArr = []
+         response.data.forEach(element => {
+           newArr.push(element.name);
+         });
+         const newSet = [...new Set(newArr)];
+         setCat(newSet);
       } catch (error) {
        console.error(error);
      }
@@ -33,8 +37,8 @@ export default function Sidebar() {
             <span className="sideBarTitle">CATOGORIES</span>
             <ul className="catogoriesList">
                     {cats.map((item)=>{
-                      return <li key={item.name} className="catogoriesListItem">
-                      <Link  className = "cat" to = {`/?cat=${item.name}`}> {item.name} </Link>
+                      return <li key={item} className="catogoriesListItem">
+                      <Link  className = "cat" to = {`/?cat=${item}`}> {item} </Link>
                      </li> 
                     })}
             </ul>
