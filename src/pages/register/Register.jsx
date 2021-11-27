@@ -8,7 +8,7 @@ export default function Register() {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const [er, setEr] = useState(false);
-    // setEr(false);
+
     async function handleSubmit(e){
           e.preventDefault();
           try{

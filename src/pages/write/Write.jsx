@@ -27,13 +27,11 @@ export default function Write() {
       data.append("file", file);
       newPost.photo = filename;
       try{
-          const res = await axios.post("http://localhost:5000/api/upload", data);
+          await axios.post("http://localhost:5000/api/upload", data);
       }catch(err){
         console.log(err);
       }
     }
-
-    // await axios.post("http://localhost:5000/api/category", {name:category1});
 
  if (category1 !== ""){
       try{

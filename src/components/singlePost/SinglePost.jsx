@@ -19,7 +19,6 @@ export default function SinglePost() {
           setPost(response.data);
           setTitle(response.data.title);
           setDesc(response.data.description);
-          // console.log(response);
        } catch (error) {
         console.error(error);
       }

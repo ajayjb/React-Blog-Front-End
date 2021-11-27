@@ -14,10 +14,6 @@ export default function TopBar() {
     return (
         <div className="top">
             <div className="topLeft">
-            {/* <i className="topIcon fab fa-twitter fa-lg"></i>
-            <i className="topIcon fab fa-facebook fa-lg"></i>
-            <i className="topIcon fab fa-instagram fa-lg"></i>
-            <i className="topIcon fab fa-pinterest fa-lg"></i> */}
             <Link className="link" to="/"><span className="logo">Moderen Blog</span></Link>
             </div>
             <div className="topCenter">
@@ -35,7 +31,6 @@ export default function TopBar() {
                 <Link className="link" to="/write">Write</Link>
                 </li>
                 <li className="topListItem" onClick={handleLogout}> {user && "Logout"}
-                {/* <Link className="link" onclick = {handleLogout} to="/login">{user && "Logout"}</Link> */}
                 </li> 
             </ul>
             </div>
@@ -56,7 +51,6 @@ export default function TopBar() {
                 </ul>
                 </>
                 }
-                {/* <i className=" topSearchIcon fas fa-search"></i> */}
             </div>
         </div>
     )

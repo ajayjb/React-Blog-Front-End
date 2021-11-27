@@ -8,7 +8,7 @@ function Header() {
                <span className="headerTitlesm">MODEREN TECH</span>
                <span className="headerTitlelg">Blog</span>
            </div>
-           <img className="headerImg" src="https://itchronicles.com/wp-content/uploads/2021/01/technology-impact-on-life-1024x566.jpg.webp" alt="React & Node Avatar" />
+           <img className="headerImg" src="https://wallpapercave.com/wp/wp2042030.jpg" alt="React & Node Avatar" />
         </div>
     )
 }

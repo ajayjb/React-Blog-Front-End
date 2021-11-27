@@ -1,7 +1,7 @@
 import React, { useEffect, useState }  from 'react';
 import "./sidebar.css";
 import axios from 'axios';
-import { BrowserRouter as Router,  Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export default function Sidebar() {
   const [cats, setCat] = useState([]);
@@ -22,7 +22,6 @@ export default function Sidebar() {
      getCats();
   },[]);
 
-  //onClick = {() => { window.location.href = `/?cat=${item.name}` }}
     return (
         <div className="sideBar">
           <div className="wrapper">

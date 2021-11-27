@@ -1,7 +1,7 @@
 .header{
-    padding-top: 60px;
+    padding-top: 75px;
     /* background: linear-gradient(90deg, #8e9eab,#eef2f3); */
-    background-color: rgb(222, 236, 248);
+    background-color: #D0CAB2;
 }
 .headerTitle{
     display: flex;
@@ -16,13 +16,13 @@
 .headerTitlesm{
 font-size: 20px;
 position: absolute;
-top: 18%;
+top: 10%;
 }
 
 .headerTitlelg{
     font-size: 100px;
     position: absolute;
-    top: 20%;
+    top: 12%;
 }
 
 .headerImg{
