@@ -1,6 +1,9 @@
 * {
     margin: 0;
     padding: 0;
+    /* scrollbar-width: thin;
+    scrollbar-color: red green; */
+
 }
 
 .link{
@@ -9,7 +12,6 @@
 }
 
 .body{
-    background-color: #F6F6F6;
     margin: 0;
     padding: 0;
 }

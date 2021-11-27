@@ -43,7 +43,7 @@ export default function Sidebar() {
             </ul>
             </div>
             <div className="sideBarItem">
-                <span className="sideBarTitle">Follow Us</span>
+                <span className="sideBarTitle">Follow me</span>
                 <div className="socialMedia">
                 <a href="https://twitter.com/ajay_j_b"><i className="socialIcon fab fa-twitter fa-lg"></i></a>
                 </div>

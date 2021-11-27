@@ -12,6 +12,7 @@ import Settings from "./pages/settings/Settings";
 import Login from "./pages/login/Login";
 import Register from "./pages/register/Register";
 import { Context } from "./context/Context";
+import About from "./pages/about/About";
 
 function App() {
   const {user} = useContext(Context);
@@ -25,8 +26,7 @@ function App() {
       <Route path="/settings"> {user ? <Settings/>:<Register/>} </Route>
       <Route path="/login"> {user ? <Home/>:<Login/>} </Route>
       <Route path="/register"> {user ? <Home/>:<Register/>} </Route>
-      <Route exact path="/?cat=Blockchain"> <Home/> </Route>
-      <Route exact path="/?cat=Life%20Science"> <Home/> </Route>
+      <Route path="/about"> <About/> </Route>
      </Switch>
     </Router>
   );

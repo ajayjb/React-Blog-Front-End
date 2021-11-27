@@ -1,7 +1,7 @@
 .header{
     padding-top: 75px;
     /* background: linear-gradient(90deg, #8e9eab,#eef2f3); */
-    background-color: #D0CAB2;
+    background-color: white;
 }
 .headerTitle{
     display: flex;
