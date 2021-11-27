@@ -1,7 +1,7 @@
 import React, { useEffect, useState }  from 'react';
 import "./sidebar.css";
 import axios from 'axios';
-import { Link } from "react-router-dom";
+import { BrowserRouter as Router,  Link } from "react-router-dom";
 
 export default function Sidebar() {
   const [cats, setCat] = useState([]);
@@ -9,13 +9,16 @@ export default function Sidebar() {
     async function getCats() {
        try {
          const response = await axios.get("http://localhost:5000/api/category");
-         setCat(response.data);
+         const arr = new Set(response.data);
+         console.log(arr);
       } catch (error) {
        console.error(error);
      }
     }
      getCats();
   },[]);
+
+  //onClick = {() => { window.location.href = `/?cat=${item.name}` }}
     return (
         <div className="sideBar">
           <div className="wrapper">
@@ -31,7 +34,7 @@ export default function Sidebar() {
             <ul className="catogoriesList">
                     {cats.map((item)=>{
                       return <li key={item.name} className="catogoriesListItem">
-                      <Link className = "cat" to = "/write"> {item.name} </Link>
+                      <Link  className = "cat" to = {`/?cat=${item.name}`}> {item.name} </Link>
                      </li> 
                     })}
             </ul>

@@ -64,8 +64,8 @@ color: #f0e7e7;
     object-fit: cover;
     cursor: pointer;
     text-decoration: none;
-    color: rgb(48, 44, 44);
-    border: 2px solid #EED7CE;
+    /* color: rgb(48, 44, 44);
+    border: 2px solid #EED7CE; */
 }
 
 .rightTopList{
@@ -86,8 +86,8 @@ color: #f0e7e7;
     text-decoration: none;
     cursor: pointer;
     position: relative;
-    bottom: 14px;
-    left: 10px;
+    bottom: 11px;
+    left: 11px;
     font-family: 'Josefin Sans', sans-serif;
     color: #f0e7e7;
     font-size: 1.1rem;

@@ -102,11 +102,11 @@ margin-top: 20px;
 align-self: flex-end;
 }
 
-.AuthorName{
+/* .AuthorName{
  color: #b39656;   
-}
+} */
 
-.link{
+.owner{
     text-decoration: none;
-    color: inherit;
+    color: #b39656;   
 }

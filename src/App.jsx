@@ -25,6 +25,8 @@ function App() {
       <Route path="/settings"> {user ? <Settings/>:<Register/>} </Route>
       <Route path="/login"> {user ? <Home/>:<Login/>} </Route>
       <Route path="/register"> {user ? <Home/>:<Register/>} </Route>
+      <Route exact path="/?cat=Blockchain"> <Home/> </Route>
+      <Route exact path="/?cat=Life%20Science"> <Home/> </Route>
      </Switch>
     </Router>
   );

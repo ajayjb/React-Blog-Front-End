@@ -80,7 +80,7 @@ export default function SinglePost() {
             </h1>
             }
             <div className="singlePostInfo">
-                <span className="AuthorName">Author : <b><Link className="link" to = {`/?user=${post.username}`}>{post.username}</Link></b></span>
+                <span className="AuthorName">Author : <b><Link className="owner" to = {`/?user=${post.username}`}>{" "+post.username}</Link></b></span>
                 <span className="SinglePostDate">{hosaDate}</span>
             </div>
             {editMode ? <textarea value={desc} onChange={(e)=>{setDesc(e.target.value)}} autoFocus type="text" className="descInput"></textarea>:

@@ -1,5 +1,5 @@
 .write{
-    padding-top: 50px;
+    padding-top: 30px;
 }
 
 .writeImg{
@@ -50,6 +50,7 @@ position: relative;
     border: none;
     padding: 20px;
     width: 70vw;
+    color: rgb(121, 119, 119);
 }
 
 .writeInput:focus{
@@ -72,4 +73,32 @@ border: none;
 background-color: teal;
 font-size: 16px;
 cursor: pointer;
+}
+
+.category1{
+    height: 20px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    text-align: center;
+    padding: 4px;
+    color: rgb(121, 119, 119);
+    border-color: rgb(238, 117, 117);
+    margin-top: 15px;
+}
+
+.category1:focus{
+    outline: none;
+}
+
+.category2{
+    height: 20px;
+    border-radius: 10px;
+    text-align: center;
+    padding: 4px;
+    color: rgb(121, 119, 119);
+    border-color: rgb(238, 117, 117);
+}
+
+.category2:focus{
+    outline: none;
 }

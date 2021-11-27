@@ -20,7 +20,7 @@ export default function Home() {
      }
    }
    fetchUser();
-}, [])
+}, [search])
     return (
         <div>
             <Header/>

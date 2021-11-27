@@ -16,6 +16,7 @@
    display: flex;
    flex-direction: column;
    align-items: center;
+   justify-content: center;
 }
 
 .postCat{
@@ -40,7 +41,7 @@ color: #be9656;
     font-style: italic;
     font-size: 13px;
     color: #999;
-    margin-top: 15px;
+    margin-top: 3px;
 }
 .postDesc{
     font-family: "Varela Round", sans-serif;

@@ -8,6 +8,8 @@ export default function Write() {
   const [desc, setDesc] = useState("");
   const [file, setFile] = useState(null);
   const {user} = useContext(Context);
+  const [category1, setCategory1] = useState("");
+  const [category2, setCategory2] = useState("");
 
   const handleSubmit = async (e)=>{
     e.preventDefault();
@@ -15,8 +17,9 @@ export default function Write() {
       username : user.username,
       title : title,
       description : desc,
-      categories : ["Life Science", "humanity"]
+      categories : [category1, category2]
     }
+
     if(file){
       const data = new FormData();
       const filename = Date.now() + file.name;
@@ -29,6 +32,27 @@ export default function Write() {
         console.log(err);
       }
     }
+
+    // await axios.post("http://localhost:5000/api/category", {name:category1});
+
+ if (category1 !== ""){
+      try{
+          await axios.post("http://localhost:5000/api/category", {name:category1});
+      }
+      catch(err){
+          console.log(err);
+      }
+    }
+
+    if (category2 !== ""){
+      try{
+          await axios.post("http://localhost:5000/api/category", {name:category2});
+      }
+      catch(err){
+          console.log(err);
+      }
+  }
+
     try{
       const res = await axios.post("http://localhost:5000/api/posts", newPost);
       window.location.replace(`/posts/${res.data._id}`);
@@ -50,8 +74,8 @@ export default function Write() {
               <input type="text" placeholder="Title" className="title" onChange={(e)=>{setTitle(e.target.value)}}
               autoFocus={true}/>
               <div className="category">
-              <input type="text" placeholder="Category 1" />
-              <input type="text" placeholder="Category 2" />
+              <input spellCheck="true" className="category1" onChange = {(e)=>{setCategory1(e.target.value)}} type="text" placeholder="Category 1" />
+              <input spellCheck="true" className="category2" onChange = {(e)=>{setCategory2(e.target.value)}} type="text" placeholder="Category 2" />
             </div>
             </div>
             
