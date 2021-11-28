@@ -14,6 +14,7 @@ import Register from "./pages/register/Register";
 import { Context } from "./context/Context";
 import About from "./pages/about/About";
 import Contact from "./pages/contact/Contact";
+import Footer from "./components/footer/Footer";
 
 
 function App() {
@@ -31,6 +32,8 @@ function App() {
       <Route path="/about"> <About/> </Route>
       <Route path="/contact"> <Contact/> </Route>
      </Switch>
+     {/* {user && <Footer/>} */}
+     <Footer/>
     </Router>
   );
 }

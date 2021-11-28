@@ -82,14 +82,14 @@ label{
 }
 
 .settingsSubmit{
-    width: 150px;
     padding: 10px;
-    font-size: 15px;
-    border-radius: 10px;
-    margin-top: 10px;
-    background-color:teal;
-    align-self: center;
+    width: 200px;
+    margin: 20px auto;
+    font-family: 'Poppins', sans-serif;
+    background-color: #5457ff;
     border: none;
-    color: aliceblue;
-    cursor: pointer;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 5px;
 }
