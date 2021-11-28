@@ -1,0 +1,30 @@
+.aboutImg{
+    width: 500px;
+    height: 312px;
+    margin-left: 250px;
+    margin-top: 5px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.aboutPara{
+    font-family: "Varela Round", sans-serif;
+    font-size: 15px;
+    color: #444;
+    display: flex;
+    line-height: 24px;
+    text-align: justify;
+    margin-top: 25px;
+}
+
+.about{
+    flex-direction: column;
+    width: 1000px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    /* position: absolute;
+    top: 18%;
+    right: 17%; */
+    margin: 40px auto;
+}
