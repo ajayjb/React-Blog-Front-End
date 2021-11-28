@@ -63,8 +63,7 @@ color: #f0e7e7;
     object-fit: cover;
     cursor: pointer;
     text-decoration: none;
-    /* color: rgb(48, 44, 44);
-    border: 2px solid #EED7CE; */
+    border: 1px solid #979696;
 }
 
 .rightTopList{
@@ -87,9 +86,9 @@ color: #f0e7e7;
     position: relative;
     bottom: 11px;
     left: 11px;
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
     color: #f0e7e7;
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: 300;
 }
 

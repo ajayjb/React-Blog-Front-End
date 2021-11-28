@@ -11,6 +11,7 @@ export default function Settings() {
     const [password, setPassword] = useState("");
     const [name, setName] = useState("");
     const [file, setFile] = useState(null);
+    const [profile, setProfile] = useState(false);
     const PF = "http://localhost:5000/images/";
 
     const handleSubmit = async (e)=>{
@@ -35,6 +36,7 @@ export default function Settings() {
         try{
             const res = await axios.put("http://localhost:5000/api/users/update/"+user._id, updatedUser);
             dispatch({type:"UPDATE_SUCCESS", payload:res.data});
+            setProfile(true);
           }catch(err){
             dispatch({type:"UPDATE_FAILURE"});
           }
@@ -75,9 +77,9 @@ export default function Settings() {
                       <input type="email" placeholder={user.email} onChange = {(e)=>{setEmail(e.target.value)}}/>
                       <label>Password</label>
                       <input type="password" onChange = {(e)=>{setPassword(e.target.value)}}/>
-                <button type="submit" className="settingsSubmit">Update</button>    
+                      <button type="submit" className="settingsSubmit">Update</button>    
                   </form>
-    
+                  {profile? <span className="essage">Profile updated successfully</span>: <span></span>}
           </div>
               <Sidebar/>
         </div>

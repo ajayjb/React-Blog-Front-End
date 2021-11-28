@@ -6,6 +6,14 @@ import ("./topbar.css");
 
 export default function TopBar() {
     const {user, dispatch} = useContext(Context);
+    let noProfilePic = false;
+    try{
+        if((user.profilePicture).length === 0){
+            noProfilePic = true;
+        }
+    }catch(e){
+        console.log(e);
+    }
 
     const handleLogout = ()=>{
         dispatch({type:"LOGOUT"});
@@ -36,7 +44,7 @@ export default function TopBar() {
             </div>
             <div className="topRight">
                 { user ? <div>
-                    <Link to="/settings" className="link"><img className="topImage" src={PF + user.profilePicture} alt="Update profile" /></Link>
+                    <Link to="/settings" className="link"><img className="topImage" src={noProfilePic ? "https://w7.pngwing.com/pngs/717/24/png-transparent-computer-icons-user-profile-user-account-avatar-heroes-silhouette-black-thumbnail.png" :PF + user.profilePicture} alt="Update profile"/></Link>
                     <Link to="/settings" className="link"><span className="name">{user.name}</span></Link>
                 </div>
                  :

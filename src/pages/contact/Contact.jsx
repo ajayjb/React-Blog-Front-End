@@ -9,7 +9,7 @@ export default function Contact() {
     const [text, setText] = useState("");
     const handleSubmit = async (e)=>{
         e.preventDefault();
-        const res  = await axios.post("http://localhost:5000/api/contacts/", {
+        await axios.post("http://localhost:5000/api/contacts/", {
             name : name,
             email : email,
             message : text
@@ -17,7 +17,7 @@ export default function Contact() {
         setSent(true);
         setTimeout(() => {
             window.location.reload();
-        }, 1000);
+        }, 2000);
     }
     return (
         <div className="contact">
