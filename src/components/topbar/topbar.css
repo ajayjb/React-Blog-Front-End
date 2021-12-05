@@ -84,8 +84,8 @@ color: #f0e7e7;
     text-decoration: none;
     cursor: pointer;
     position: relative;
-    bottom: 11px;
-    left: 11px;
+    bottom: 12px;
+    left: 12px;
     font-family: 'Poppins', sans-serif;
     color: #f0e7e7;
     font-size: 1rem;
@@ -95,9 +95,19 @@ color: #f0e7e7;
 .logo{
     font-size: 1.5rem;
     font-family: 'Merriweather', serif;
-    font-weight: 600;
-    background-image: linear-gradient(90deg, #fc354c, #0abfbc);
-    background-clip: text;
+    font-weight: 200;
     color: transparent;
-    cursor: pointer;
+    background-image: linear-gradient(90deg, #fc354c, #0abfbc);
+   -webkit-text-stroke:  2px;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-position: 0 0;
+    animation: back 60s linear infinite;
 }
+
+@keyframes back{
+    100%{
+      background-position: 2000px 0;
+    }
+  }
+

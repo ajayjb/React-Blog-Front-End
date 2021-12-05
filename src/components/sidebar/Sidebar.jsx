@@ -28,7 +28,7 @@ export default function Sidebar() {
             <div className="sideBarItem">
               <span className="sideBarTitle">ABOUT ME</span>
               <img src="https://pbs.twimg.com/profile_images/1462870429186461696/Kq7HrwQf_400x400.jpg" alt="Owner Avatar" />
-              <p className="myInfo">Hi I'am Ajay,
+              <p className="myInfo">Hi I'm Ajay,
                  Web developer, Crypto Enthusiast, 
                  Web3, Block Chain Technology and Mechanical Engineer.</p>
             </div>
